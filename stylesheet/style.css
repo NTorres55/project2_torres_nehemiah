@@ -88,7 +88,16 @@ footer {
   height: 50px;
 }
 /********** End Footer Section ***************/
+/*****START MEDIA WIDTH LARGER THAN 320PX ********/
 
+@media (min-width: 320px) {
+  .about {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+/*****END MEDIA WIDTH LARGER THAN 320 PX ********/
 
 /**** START MEDIA WIDTH LARGER THAN 500px ********/
 @media (min-width: 500px) {
@@ -97,6 +106,11 @@ footer {
     max-width: 500px;
     align-items: center;
     justify-content: center;
+    margin: auto;
+  }
+  .about {
+    max-width: 600px;
+    width: 80%;
     margin: auto;
   }
 }
@@ -112,6 +126,11 @@ footer {
     justify-content: center;
     margin: auto;
   }
+  .about {
+    max-width: 800px;
+    width: 75%;
+    margin: auto;
+    }
 }
 /**** END MEDIA WIDTH LARGER THAN 750px ********/
 
