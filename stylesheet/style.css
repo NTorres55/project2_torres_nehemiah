@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: bahnschrift;
+}
+
+.top-nav {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 15px solid #303030;
+  outline: 3px solid #ce1818;
+  display: flex;
+}
+
+.logo {
+  margin: 0;
+  max-height: 4.5em;
+}
+
+.main-nav {
+  margin: 1em 0 0 5%;
+  flex-direction: row;
+}
+
+ul {
+  list-style: none;
+  padding: 0 1.4em 0 0;
+  margin: 0;
+  display: flex;
+}
+
+.logo {
+  display: flex;
+}
+
+.main-nav a {
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 15px;
+  color: #252525;
+  font-size: 1.5em;
+}
+
+li a:active {
+  color: #ce1818;
+  border-bottom: 2px solid #000000;
+  font-weight: 300;
+}
+
+li a:hover {
+  color: #ce1818;
+}
+/*************** End Navigation Bar *******************/
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+figure {
+  width: 100%;
+}
+
+main img {
+  max-width: 100%;
+}
+
+/**************** for sticky footer */
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.site-conent {
+  flex-grow: 1;
+}
+/******************* end sticky footer************ */
+
+
+/*******************footer section******************/
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  height: 50px;
+}
+/********** End Footer Section ***************/
+
+
+/**** START MEDIA WIDTH LARGER THAN 500px ********/
+@media (min-width: 500px) {
+  figure {
+    width: 50%;
+    max-width: 500px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+}
+/**** END MEDIA WIDTH LARGER THAN 500px ********/
+
+
+/**** END MEDIA WIDTH LARGER THAN 750px ********/
+@media (min-width: 750px) {
+  figure {
+    width: 33.33333333%;
+    max-width: 800px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+}
+/**** END MEDIA WIDTH LARGER THAN 750px ********/
+
+
+/**** END MEDIA WIDTH LARGER THAN 990px ********/
+@media (min-width: 990px) {
+  .work {
+    max-width: 990px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+}
+/**** END MEDIA WIDTH LARGER THAN 990px ********/
+
+
+/******** START NAVIGATION SHIFT 769px **************/
+@media (min-width: 769px) {
+	.top-nav,
+	.main-nav {
+		display: flex;
+	}
+	.top-nav {
+		flex-direction: column;
+		align-items: center;}
+    	.header{
+		width: 80%;
+		margin: 0 auto;
+		max-width: 1150px;
+    }
+	}
+
+@media (max-width: 580px) {
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 50%;
+    margin-top: 1%;
+  }
+}
+
+@media (max-width: 460px) {
+  .main-nav {
+    font-size: .75em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .top-nav,
+  .main-nav {
+    display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+  }
+}
