@@ -6,6 +6,13 @@
   font-family: bahnschrift;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255,255,255,0.90);
+  z-index: 1;
+}
+
 .top-nav {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -53,6 +60,9 @@ li a:hover {
   color: #ce1818;
 }
 /*************** End Navigation Bar *******************/
+.hero {
+  margin-top: 75px;
+}
 
 .work {
   display: flex;
@@ -66,6 +76,13 @@ figure {
 main img {
   max-width: 100%;
 }
+
+.about,.contact {
+  height: 150px;
+  display: wrap;
+  text-align: center;
+}
+
 
 /**************** for sticky footer */
 .site {
@@ -91,7 +108,7 @@ footer {
 /*****START MEDIA WIDTH LARGER THAN 320PX ********/
 
 @media (min-width: 320px) {
-  .about {
+  .about,.contact {
     width: 80%;
     margin: auto;
   }
@@ -108,7 +125,7 @@ footer {
     justify-content: center;
     margin: auto;
   }
-  .about {
+  .about,.contact {
     max-width: 600px;
     width: 80%;
     margin: auto;
@@ -126,7 +143,7 @@ footer {
     justify-content: center;
     margin: auto;
   }
-  .about {
+  .about,.contact {
     max-width: 800px;
     width: 75%;
     margin: auto;
@@ -184,6 +201,9 @@ footer {
     display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+  }
+  .hero {
+    margin-top: 0px;
   }
 }
 

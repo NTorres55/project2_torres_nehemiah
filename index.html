@@ -5,7 +5,7 @@
 
         <meta charset="utf-8"/>
         <meta name="keywords" content=""/>
-        <meta name="description" content="This is a website that was designed and created by me for MMC5277:Web Design Principles - Summer A/C 2018"/>
+        <meta name="description" content="This is a website that I created for a class project for Fall 2018"/>
         <meta name="viewport" content="width=device-width">
 
         <!-- favicon -->
@@ -14,14 +14,18 @@
         <!-- CSS -->
         <link rel="stylesheet" href="stylesheet/style.css"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
-
+        <link rel="stylesheet" href="stylesheet/animations.css">
 
         <!-- scripts -->
         <script type="text/javascript" src="script/javascript.js"></script>
 
 
   </head>
+
+  <body class="site">
+
   <header class="top-nav">
+
       <img  class="logo" src="./images/ntlogo1.png" width="180px" alt="Logo" title="Logo" />
           <ul class="main-nav" id="menu">
             <li><a href="#hero">home</a></li>
@@ -29,9 +33,9 @@
             <li><a href="#about">about</a></li>
             <li><a href="#contact">contact</a></li>
           </ul>
+
   </header>
 
-  <body class="site">
       <section class="hero">
 
           <video class="design" width="100%" muted autoplay loop>
@@ -45,8 +49,10 @@
       </section>
 
       <main class="site-content">
-        <h2>design</h2>
-          <section class="work">
+
+    <h2>design</h2>
+
+        <section class="work">
 
                 <figure>
                   <a data-fancybox="gallery" href="./images/duncan.jpg"><img src="./images/duncan.jpg" alt="" /></a>
@@ -76,12 +82,19 @@
             </section>
 
             <h2>about</h2>
-            <section class="about">
-              <p>my name is nehemiah torres and i am a graduate student of web deisgn at the university of florida. i am currently in cary, north carolina. i get my inspirations from culture, life experience and observation.
-              </p>
-            </section>
 
+              <section class="about">
+                  <p>my name is nehemiah torres and i am a graduate student of web deisgn at the university of florida. i am currently in cary, north carolina. i get my inspirations from culture, life experience and observation.
+                  </p>
+              </section>
 
+            <h2 class="bounceIn">contact</h2>
+
+              <section class="contact">
+                <p>nehemiah.torres@gmail.com
+                  <br>
+                  703.655.5337</p>
+              </section>
 
       </main>
 
@@ -92,8 +105,14 @@
       <!--Fancybox Jquery script-->
       <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
       <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+      <!--animate it script-->
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="js/css3-animate-it.js"></script>
+
+
 
 
   </body>
+
 
 </html>
