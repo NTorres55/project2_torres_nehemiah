@@ -80,11 +80,14 @@ main img {
 }
 
 .about,.contact {
-  height: 150px;
+  min-height: 100vh;
   display: wrap;
   text-align: center;
 }
 
+.page2 {
+  min-height: 100vh;
+}
 
 /**************** for sticky footer */
 .site {
@@ -208,5 +211,3 @@ footer {
     margin-top: 0px;
   }
 }
-
-/*
