@@ -35,6 +35,7 @@
           </ul>
 
   </header>
+      <a id="hero" class="smooth"></a>
 
       <section class="hero">
 
@@ -48,9 +49,13 @@
 
       </section>
 
-      <main class="site-content">
+    <main class="site-content">
+
+    <div class="page2">
 
     <h2>design</h2>
+
+        <a id="work" class="smooth"></a>
 
         <section class="work">
 
@@ -80,27 +85,39 @@
                 </figure>
 
 
-            </section>
+          </section>
+
+        </div>
 
             <h2>about</h2>
 
-              <section class="about">
+            <section class="about">
+
+              <a id="about" class="smooth"></a>
+
                   <p>my name is nehemiah torres and i am a graduate student of web deisgn at the university of florida. i am currently in cary, north carolina. i get my inspirations from culture, life experience and observation.
                   </p>
-              </section>
+
+            </section>
 
             <h2 class="bounceIn">contact</h2>
 
+              <a id="contact" class="smooth"></a>
+
               <section class="contact">
+
                 <p>nehemiah.torres@gmail.com
                   <br>
                   703.655.5337</p>
+
               </section>
 
       </main>
 
       <footer>
+
         <p>Copyright 2018. Nehemiah Torres.</p>
+
       </footer>
 
       <!--Fancybox Jquery script-->
@@ -110,6 +127,18 @@
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
       <script src="js/css3-animate-it.js"></script>
 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+      <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+      <script>
+      $('.smooth').on('click', function() {
+          $.smoothScroll({
+              scrollElement: $('body'),
+              scrollTarget: '#' + this.id
+            });
+
+          return false;
+      });
+      </script>
 
 
 
