@@ -47,7 +47,7 @@ ul {
   text-align: center;
   padding: 10px 15px;
   color: #252525;
-  font-size: 1.5em;
+  font-size: 1.833em;
 }
 
 li a:active {
@@ -71,22 +71,34 @@ li a:hover {
 
 figure {
   width: 100%;
-  max-height: 225px;
-  overflow: hidden;
+}
+
+main {
+  font-size: 1.5em;
 }
 
 main img {
   max-width: 100%;
 }
 
-.about,.contact {
+h2 {
+  margin: 1em;
+}
+
+.about {
   min-height: 100vh;
   display: wrap;
-  text-align: center;
+  flex-wrap: wrap;
+}
+
+.contact {
+  display: wrap;
+  flex-wrap: wrap;
 }
 
 .page2 {
   min-height: 100vh;
+  background-color: #d7d7d7;
 }
 
 /**************** for sticky footer */
@@ -100,7 +112,6 @@ main img {
   flex-grow: 1;
 }
 /******************* end sticky footer************ */
-
 
 /*******************footer section******************/
 footer {
@@ -196,7 +207,7 @@ footer {
 
 @media (max-width: 460px) {
   .main-nav {
-    font-size: .75em;
+    font-size: .72em;
   }
 }
 
